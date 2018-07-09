@@ -1,5 +1,5 @@
 # Recipe Project
-This project allows find recipes for any dish that they want. Instructions, ingredients and a video is provided for the user.
+This project allows find recipes for any dish that they want. 
 
 This project was created using ReactJS. The data is retrieved using the free api https://www.themealdb.com/api.php
 
@@ -7,10 +7,11 @@ This project was created using ReactJS. The data is retrieved using the free api
 ![alt text](https://github.com/AntonioLok/Find-Recipe-ReactJS/blob/master/images/main.png)
 ![alt text](https://github.com/AntonioLok/Find-Recipe-ReactJS/blob/master/images/recipe.png)
 
-To start the project run `npm start`
+To start the project run simply run on the command `npm start`
 
 # About me
 This project was created by Antonio Lok for learning purposes only.
+
 
 
 
