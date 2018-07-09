@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-//import { Home } from './home'
-import { Redirect } from 'react-router-dom';
 import '../styles/Home.css';
 
 class Home extends Component {
@@ -17,7 +15,7 @@ class Home extends Component {
   }
 
   handleSubmit(event) {
-    this.setState({redirect: <Redirect to={`/recipe/${this.state.ingredient}`} />});
+    this.setState({redirect: this.props.history.push("/recipe/" + this.state.ingredient)});
     event.preventDefault();
   }  
 
