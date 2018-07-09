@@ -56,8 +56,7 @@ class Recipe extends Component {
     return (
       <div className="recipe-container">
         <div id="title"> Showing recipes for {this.props.match.params.ingredient}</div>
-        <div id="display-container" >
-          {console.log(this.state.data)}  
+        <div id="display-container" > 
           {this.state.loaded ? this.getRecipeList() : null }
         </div>
         {this.state.redirect}
