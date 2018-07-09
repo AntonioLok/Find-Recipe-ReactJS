@@ -1,12 +1,24 @@
 import React, { Component } from 'react';
+import Home from './Home';
+import Recipe from './Recipe';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 import '../styles/App.css';
 
 class App extends Component {
+
   render() {
     return (
-      <div className="App">
-        Hi
-      </div>
+      <Router>
+        <div className="container">
+          <Switch >
+            <Route exact path="/" render={() => <Redirect to="/home" />} />
+            <Route path="/home" component={ Home } />
+            <Route path="/recipe/:ingredient" component={ Recipe } />
+            <Route exact path="*" render={() => <h1> Error 404, Page does not exist </h1>} />
+          </Switch >
+        </div>
+      </Router>
     );
   }
 }
